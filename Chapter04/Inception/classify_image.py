@@ -11,6 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+# 
+# Mike Chen Has the following change to adapt to TensorFlow 2.0
+# Delete "import tensorflow as tf"
+# Add "import tensorflow.compat.v1 as tf"
 # ==============================================================================
 
 """Simple image classification with Inception.
@@ -43,7 +47,8 @@ import tarfile
 
 import numpy as np
 from six.moves import urllib
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 FLAGS = None
 
