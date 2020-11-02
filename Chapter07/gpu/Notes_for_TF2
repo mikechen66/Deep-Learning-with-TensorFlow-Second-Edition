@@ -2,9 +2,13 @@
 
 Please note that tensorflow.contrib is totally discarded by the TensorFlow team, the assumed class tensorflow.compat.v1.contrib could not be used. So it is necessary to either rewrite all the related libraries or include the related modified functions and class(es) into the script. It is much better to choose the second way. 
 
-1.keras distribued script with GPUs
+1.keras training script with GPUs
 
+Distributed trraining: 
 https://github.com/tensorflow/docs/blob/master/site/en/tutorials/distribute/keras.ipynb
+
+Training a neural network on MNIST with Keras
+https://www.tensorflow.org/datasets/keras_example
 
 2.Mnist scripts in the tensorflow.contrib link. 
 
