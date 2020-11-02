@@ -1,0 +1,22 @@
+
+
+Please note that tensorflow.contrib is totally discarded by the TensorFlow team, the assumed class tensorflow.compat.v1.contrib could not be used. So it is necessary to either rewrite all the related libraries or include the related modified functions and class(es) into the script. It is much better to choose the second way. 
+
+1.keras distribued script with GPUs
+
+https://github.com/tensorflow/docs/blob/master/site/en/tutorials/distribute/keras.ipynb
+
+2.Mnist scripts in the tensorflow.contrib link. 
+
+https://github.com/tensorflow/tensorflow/blob/7c36309c37b04843030664cdc64aca2bb7d6ecaa/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L160
+
+
+3.read_data_sets() deprecated in TensorFlow 2.2 
+
+The mnist object is returned from the read_data_sets() function defined in the tf.contrib.learn module. The mnist.train.next_batch(batch_size) method is implemented here, and it returns a tuple of two arrays, where the first represents a batch of batch_size MNIST images, and the second represents a batch of batch-size labels corresponding to those images.
+
+The images are returned as a 2-D NumPy array of size [batch_size, 784] (since there are 784 pixels in an MNIST image), and the labels are returned as either a 1-D NumPy array of size [batch_size] (if read_data_sets() was called with one_hot=False) or a 2-D NumPy array of size [batch_size, 10] (if read_data_sets() was called with one_hot=True).
+
+4.tf.compat.v1.train.batch():
+https://www.tensorflow.org/api_docs/python/tf/compat/v1/train/batch
+
