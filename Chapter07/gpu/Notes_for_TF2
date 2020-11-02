@@ -8,6 +8,7 @@ https://github.com/tensorflow/docs/blob/master/site/en/tutorials/distribute/kera
 
 2.Mnist scripts in the tensorflow.contrib link. 
 
+https://github.com/tensorflow/tensorflow/tree/13f9309ccb063a58b0ce34aafc23f93a49e33733/tensorflow/contrib/learn/python/learn/datasets
 https://github.com/tensorflow/tensorflow/blob/7c36309c37b04843030664cdc64aca2bb7d6ecaa/tensorflow/contrib/learn/python/learn/datasets/mnist.py#L160
 
 
